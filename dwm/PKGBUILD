@@ -2,7 +2,7 @@
 
 pkgname=dwm-git
 _gitname=dwm
-pkgver=6.2
+pkgver=6.2.r0.gcb3f58a
 pkgrel=1
 pkgdesc="dwm personalised for mfkd"
 url='https://github.com/mfkd/dwm'
@@ -15,12 +15,6 @@ conflicts=('dwm')
 
 source=('git://github.com/mfkd/dwm.git')
 md5sums=('SKIP')
-
-pkgver(){
-    cd "$_gitname"
-    printf '0.r%s.%s' \
-        "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-}
 
 build() {
     cd "$_gitname"
