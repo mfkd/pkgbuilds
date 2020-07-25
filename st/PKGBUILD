@@ -1,7 +1,7 @@
 # Maintainer: Matt Doherty mfkd@protonmail.com
 
 pkgname=st-git
-_gitname=dwm
+_gitname=st
 pkgver=0.8.4
 pkgrel=1
 pkgdesc='st personalised for mfkd'
@@ -14,12 +14,6 @@ source=('git://github.com/mfkd/st.git')
 md5sums=('SKIP')
 provides=('st')
 conflicts=('st')
-
-pkgver(){
-    cd "$_gitname"
-    printf '0.r%s.%s' \
-        "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-}
 
 build() {
     cd "$_gitname"
