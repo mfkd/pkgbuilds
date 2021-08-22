@@ -1,4 +1,3 @@
 # PKGBUILDs
 
-A PKGBUILD is a shell script containing the build information required by Arch
-Linux packages.
+These are my personal PKGBUILDs currently for my favorite Suckless tools.
